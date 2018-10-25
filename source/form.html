@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__image" src="" alt="">
+      </div>
+      <nav class="header__navigation">
+        <button class="header__menuButtonOpen button" type="button" name="button">Открыть меню</button>
+        <button class="header__menuButtonClose button" type="button" name="button">Закрыть меню</button>
+          <ul class="header__list">
+            <li class="header__item header__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="header__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="header__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="header__item">
+              <a>Html Academy</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+
+
+    <main class="main">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+        <section class="formName">
+          <div class="formName__backgroundImage">
+            <h1 class="formName__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </div>
+          <p class="formName__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <ul class="formName__list">
+            <li class="formName__item">
+              <label class="formName__label" for="surname">Фамилия:</label>
+              <br>
+              <input class="formName__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="formName__item">
+              <label class="formName__label" for="name">Имя:</label>
+              <br>
+              <input class="formName__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+            </li>
+            <li class="formName__item">
+              <label class="formName__label" for="patronymic">Отчество:</label>
+              <br>
+              <input class="formName__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </section>
+
+        <section class="formAdvance">
+          <h3 class="formAdvance__title">Ваши безбашенные достижения в путешествии</h3>
+          <ul class="formAdvance__list">
+            <li class="formAdvance__item">
+              <input class="formAdvance__input" type="checkbox" id="selfi" name="selfi" checked>
+              <label class="formAdvance__label" for="selfi">Сделал селфи с акулой</label>
+            </li>
+            <li class="formAdvance__item">
+              <input class="formAdvance__input" type="checkbox" id="beach" name="beach" checked>
+              <label class="formAdvance__label" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="formAdvance__item">
+              <input class="formAdvance__input" type="checkbox" id="norris" name="norris">
+              <label class="formAdvance__label" for="norris">Видел Чака Норриса</label>
+            </li>
+            <li class="formAdvance__item">
+              <input class="formAdvance__input" type="checkbox" id="souvenirs" name="souvenirs">
+              <label class="formAdvance__label" for="souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="formAdvance__item">
+              <input class="formAdvance__input" type="checkbox" id="tower" name="tower" checked>
+              <label class="formAdvance__label" for="tower">Удержал башню</label>
+            </li>
+            <li class="formAdvance__item">
+              <input class="formAdvance__label" type="checkbox" id="hotel" name="hotel">
+              <label class="formAdvance__input" for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="formContacts">
+          <ul class="formContacts__list">
+            <li class="formContacts__item">
+              <label class="formContacts__lable" for="tel">Номер телефона</label>
+              <br>
+              <input class="formContacts__input" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйст">
+            </li>
+            <li class="formContacts__item">
+              <label class="formContacts__label" for="email">Адрес почты</label>
+              <br>
+              <input class="formContacts__input" type="email" id="email" name="email" placeholder="Введите почту *">
+            </li>
+          </ul>
+        </section>
+
+        <section class="formApps">
+          <h3 class="formApps__title">С каким приложением путешествовали?</h3>
+          <ul class="formApps__list">
+            <li class="formApps__item">
+              <input class="formApps__input" type="radio" id="ios" name="apps" value="ios" checked>
+              <label class="formApps__label" for="ios">Pink для iOS</label>
+            </li>
+            <li class="formApps__item">
+              <input class="formApps__input" type="radio" id="android" name="apps" value="android">
+              <label class="formApps__label" for="android">Pink на Android</label>
+            </li>
+            <li class="formApps__item">
+              <input class="formApps__input" type="radio" id="windows" name="apps" value="windows">
+              <label class="formApps__label" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="formEmotions">
+          <h3 class="formEmotions__title">Опишите свои эмоции</h3>
+          <textarea class="formEmotions__textarea" name="emotions" rows="8" cols="35">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <button class="formEmotions__button" type="submit">Отправить форму</button>
+          <p class="formEmotions__morgenstern">* — обязательные поля</p>
+        </section>
+      </form>
+    </main>
+
+
+    <footer class="footerPageForm">
+      <div class="footerPageForm__logo"></div>
+      <ul class="footerPageForm__iconList">
+        <li class="footerPageForm__itemTwitter">Twitter</li>
+        <li class="footerPageForm__itemFacebook">Facebook</li>
+        <li class="footerPageForm__itemYoutube">Youtube</li>
+      </ul>
+      <ul class="footerPageForm__list">
+        <li class="footerPageForm__itemDesign">Разработано</li>
+        <li class="footerPageForm__itemLogo">Логотип</li>
+      </ul>
+    </footer>
+
+
+
+    <div class="popUpError--visuallyHidden">
+      <ul class="popUpError__list">
+        <li class="popUpError__item">
+          <h3 class="popUpError__title">Что-то пошло не так!</h3>
+        </li>
+        <li class="popUpError__item">
+          <p class="popUpError__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </li>
+        <li class="popUpError__item">
+          <button class="popUpError__closeButton" type="button">Ok</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="popUpConfirm--visuallyHidden">
+      <ul class="popUpConfirm__list">
+        <li class="popUpConfirm__item">
+          <h3 class="popUpConfirm__title">Ваша заявка отправлена</h3>
+        </li>
+        <li class="popUpConfirm__item">
+          <p class="popUpConfirm__paragraph">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        </li>
+      </ul>
+      <button class="popUpConfirm__button" type="button" name="button">Закрыть окно</button>
+    </div>
+  </body>
+</html>

@@ -6,7 +6,177 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__image" src="" alt="">
+      </div>
+      <nav class="header__navigation">
+        <button class="header__menuButtonOpen button" type="button" name="button">Открыть меню</button>
+        <button class="header__menuButtonClose button" type="button" name="button">Закрыть меню</button>
+          <ul class="header__list">
+            <li class="header__item header__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="header__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="header__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="header__item">
+              <a>Html Academy</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
 
+
+    <main class="main">
+      <section class="intro">
+        <div class="intro__backgroundImage"></div>
+        <a class="intro__button" href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=appstore">Скачать приложение</a>
+        <ul class="intro__list">
+          <li class="intro__itemApple"><a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=appstore">Apple</a></li>
+          <li class="intro__itemAndroid"><a href="https://play.google.com/store/apps">Android</a></li>
+          <li class="intro__itemWindows"><a href="https://www.microsoft.com/en-US/store/apps/">Windows</a></li>
+        </ul>
+        <p class="intro__textAvailable">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+
+      <section class="information">
+        <div class="information__wrapper">
+          <h1 class="information__title">Устали от серости мегаполиса?</h1>
+          <p class="information__paragraph">Нам есть, что вам  предложить!</p>
+          <ul class="information__list">
+            <li class="information__item">
+              <h2 class="information__title">Поднимает настроение</h2>
+              <p class="information__paragraph">Приложение позволит вам победить осеннюю</p>
+            </li>
+            <li class="information__item">
+              <h2 class="information__title">Меняет мир вокруг</h2>
+              <p class="information__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="information__item">
+              <h2 class="information__title">Заводит новых друзей</h2>
+              <p class="information__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="information__backgroundImage"></div>
+        </div>
+      </section>
+
+      <section class="review">
+        <article class="review__article">
+          <h1 class="review__title">Николай Петров</h1>
+          <p class="review__paragraph">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </article>
+        <article class="review__article">
+          <h1 class="review__title">Николай Петров</h1>
+          <p class="review__paragraph">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </article>
+        <article class="review__article">
+          <h1 class="review__title">Николай Петров</h1>
+          <p class="review__paragraph">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </article>
+        <button class="review__button"></button>
+        <button class="review__button"></button>
+        <button class="review__button"></button>
+      </section>
+
+      <section class="tarif">
+        <table class="base">
+          <tr class="base__row">
+            <td class="base__cell">
+              <h5 class="base__title">База</h5>
+              <p class="base__price">1,99</p>
+            </td>
+          </tr>
+          <tr class="base__row">
+            <td class="base__cell">
+              <p class="base__paragraph">Розовый фильтр</p>
+            </td>
+          </tr>
+          <tr class="base__row" >
+            <td class="base__cell">
+              <p class="base__paragraph">Смайлики</p>
+            </td>
+          </tr>
+          <tr class="base__row">
+            <td class="base__cell">
+              <p class="base__paragraph">Комментарии</p>
+            </td>
+          </tr>
+        </table>
+        <table class="standard standard--active" >
+          <tr class="standard__row">
+            <td class="standard__cell">
+              <h5 class="standard__title">Стандарт</h5>
+              <p class="standard__price">3,99</p>
+            </td>
+          </tr>
+          <tr class="standard__row">
+            <td class="standard__cell">
+              <p class="standard__paragraph">Розовый фильтр</p>
+            </td>
+          </tr>
+          <tr class="standard__row">
+            <td class="standard__cell">
+              <p class="standard__paragraph">Смайлики</p>
+            </td>
+          </tr>
+          <tr class="standard__row">
+            <td class="standard__cell">
+              <p class="standard__paragraph">Комментарии</p>
+            </td>
+          </tr>
+        </table>
+
+        <table class="unlim" >
+          <tr class="unlim__row">
+            <td class="unlim__cell">
+              <h5 class="unlim__title">Анлим</h5>
+              <p class="unlim__price">9,99</p>
+            </td>
+          </tr>
+          <tr class="unlim__row">
+            <td class="unlim__cell">
+              <p class="unlim__paragraph">Розовый фильтр</p>
+            </td>
+          </tr>
+          <tr class="unlim__row">
+            <td class="unlim__cell">
+              <p class="unlim__paragraph">Смайлики</p>
+            </td>
+          </tr>
+          <tr class="unlim__row">
+            <td class="unlim__cell">
+              <p class="unlim__paragraph">Комментарии</p>
+            </td>
+          </tr>
+        </table>
+        <button class="unlim__button"></button>
+        <button class="unlim__button"></button>
+        <button class="unlim__button"></button>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <h1 class="footer__title">Остались вопросы? Свяжитесь с нами!</h1>
+      <ul class="footer__list">
+        <li class="footer__item">Звоните:
+          <a class="footer__link" href="#"><p class="footer__tel">+7 (812) 555-66-66</p></a>
+        </li>
+        <li class="footer__item">Пишите:
+          <a class="footer__link" href="#"><p class="footer__email">mail@htmlacademy.ru</p></a>
+        </li>
+        <li class="footer__item">Приезжайте в гости:
+          <p class="footer__adress">ул. Большая Конюшенная, 19/8</p>
+        </li>
+      </ul>
+      <div class="footer__map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ba22dd4d944e1e7fd58578c64a562f3e7903b4012dccad9e47f0315cfd12ef6&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+    </footer>
   </body>
 </html>

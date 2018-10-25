@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Конников-Лейманн](https://up.htmlacademy.ru/adaptive/15/user/447687).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Конников-Лейманн](https://up.htmlacademy.ru/adaptive/15/user/447687).
 
 ---
 

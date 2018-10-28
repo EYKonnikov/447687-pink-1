@@ -1,0 +1,149 @@
+.features-list {
+  list-style: none;
+  margin: 87px 0 0 0;
+  padding: 0;
+}
+
+.features-list__lead {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 33px 0 0 0;
+  letter-spacing: 1px;
+
+  br {
+    display: none;
+  }
+}
+
+.features-list__description {
+  text-align: center;
+  margin: 9px 0 0 0;
+}
+
+.features-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list__item:last-of-type .features-list__description {
+  margin-bottom: 46px;
+}
+
+.features-list__image-wrapper {
+  order: 3;
+  margin: 0 auto;
+  height: 278px;
+  overflow: hidden;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.features-list__image {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    width: 310px;
+    margin-left: 310px;
+    margin-top: 90px;
+    min-height: 443px;
+  }
+
+  .features-list__lead {
+    margin-top: 35px;
+    text-align: left;
+    letter-spacing: 0.8px;
+  }
+
+  .features-list__description {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .features-list__image-wrapper {
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    height: 480px;
+  }
+
+  .features-list__item {
+    &:last-of-type {
+      .features-list__description {
+        margin-bottom: 44px;
+      }
+
+      .features-list__lead {
+        margin-top: 38px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-list {
+    display: flex;
+    width: auto;
+    max-width: 960px;
+    margin: 80px auto 0 auto;
+  }
+
+  .features-list__item {
+    width: (100% /3);
+
+    &:last-of-type {
+      .features-list__lead {
+        margin-top: 55px;
+      }
+    }
+  }
+
+  .features-list__lead {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 55px;
+
+    br {
+      display: inline;
+    }
+  }
+
+  .features-list__description {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .features-list__image-wrapper {
+    order: 0;
+    margin: 0;
+    position: static;
+    height: 300px;
+
+    picture,
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .features-list__image-wrapper--hidden {
+    display: block;
+  }
+}

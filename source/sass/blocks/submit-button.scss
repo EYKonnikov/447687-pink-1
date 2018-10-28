@@ -1,0 +1,37 @@
+.submit-button {
+  display: block;
+  background-color: $cl-green;
+  border: 2px solid $cl-green;
+  color: $cl-white;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  width: 280px;
+  padding: 15px 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $cl-grey-border;
+    border-color: $cl-grey-border;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .submit-button {
+    width: 300px;
+  }
+}

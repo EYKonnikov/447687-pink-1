@@ -1,0 +1,17 @@
+.fullname {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .fullname {
+    padding: 20px 0 25px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fullname {
+    padding: 0;
+  }
+}

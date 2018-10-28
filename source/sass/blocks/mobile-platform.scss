@@ -1,0 +1,33 @@
+.mobile-platform {
+  background-color: $cl-grey-bg;
+  padding: 0 20px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-platform__lead {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $cl-pink;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.mobile-platform__radio-indicator {
+  margin-right: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-platform {
+    background-color: $cl-white;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mobile-platform {
+    background-color: $cl-white;
+    padding: 0;
+  }
+}

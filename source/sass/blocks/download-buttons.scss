@@ -1,0 +1,81 @@
+.download-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.download-buttons__item {
+  flex-grow: 0;
+  width: 47px;
+  margin: 0 17px;
+}
+
+.download-buttons__item--text {
+  margin: 0 auto;
+  margin-bottom: 33px;
+  flex-grow: 1;
+  width: 280px;
+  box-sizing: border-box;
+}
+
+.download-buttons__item--icon {
+  min-height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-buttons__link {
+  display: block;
+  text-decoration: none;
+
+  &--button {
+    text-align: center;
+    color: $cl-white;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    border: 3px solid $cl-white;
+    border-radius: 28px;
+    padding: 15px 0;
+    letter-spacing: 1px;
+  }
+
+  &--button:visited {
+    color: $cl-white;
+  }
+
+  &--button:hover,
+  &--button:focus {
+    color: $cl-pink;
+    background-color: $cl-white;
+  }
+
+  &--button:active {
+    color: $cl-pink-light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .download-buttons__item--text {
+    margin-bottom: 47px;
+  }
+
+  .download-buttons {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-buttons__item--text {
+    margin-bottom: 65px;
+
+    a {
+      font-size: 21px;
+    }
+  }
+}

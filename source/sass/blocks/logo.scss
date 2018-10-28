@@ -1,0 +1,40 @@
+.logo {
+  box-shadow: 0 1px 0 0 #000000;
+  margin-bottom: 1px;
+  display: flex;
+  height: 65px;
+
+  &--footer {
+    box-shadow: none;
+    justify-content: center;
+    height: auto;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 110px;
+
+    &--footer {
+      height: auto;
+      margin-bottom: 15px;
+    }
+  }
+
+  .logo__image {
+    margin: auto 0;
+    //margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .logo__image {
+    margin-left: 0;
+  }
+}

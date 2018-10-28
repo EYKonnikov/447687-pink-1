@@ -1,0 +1,121 @@
+.photos {
+  margin-top: -57px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+.photos__list {
+  @include list-reset;
+}
+
+.photos__lead-wrapper {
+  margin: 40px 0;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+.photos__lead {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photos {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 -10px;
+  }
+
+  .photos__item {
+    width: (100% / 2);
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .photos__lead-wrapper {
+    margin: 44px 0;
+  }
+
+  .photos__lead {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos {
+    margin-top: -63px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+  }
+
+  .photos__lead-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      max-width: 660px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos {
+    padding-bottom: 65px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
+  }
+
+  .photos__list-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .photos__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .photos__item {
+    width: (100% /3);
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+  }
+
+  .photos__lead-wrapper {
+    max-width: 960px;
+    margin: 9px auto 0 auto;
+  }
+}

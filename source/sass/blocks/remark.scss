@@ -1,0 +1,184 @@
+.remark__wrapper {
+  padding: 45px 0 0 0;
+  display: none;
+  background-color: $cl-white;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+.remark__link {
+  color: $cl-pink;
+  text-decoration: underline;
+  font: inherit;
+}
+
+.remark__lead {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-top: 0;
+  letter-spacing: 0.7px;
+}
+
+@media (min-width: $tablet-width) {
+  .remark__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+  }
+
+  .remark__timer,
+  .remark__description {
+    width: 50%;
+  }
+
+  .remark__description {
+    margin-top: 51px;
+  }
+
+  .remark__text {
+    margin: 10px 0;
+  }
+
+  .remark__lead {
+    margin-bottom: 10px;
+  }
+
+  .remark__timer {
+    background: url("../img/icon-timer.svg") no-repeat 22px 0;
+    background-size: 238px 276px;
+    min-height: 276px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 203px;
+      height: 203px;
+      position: absolute;
+      top: 55px;
+      left: 39px;
+      background-color: $cl-pink;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      width: 176px;
+      height: 176px;
+      position: absolute;
+      top: 68px;
+      left: 52px;
+      background-color: $cl-white;
+      border-radius: 50%;
+    }
+  }
+
+  .remark__banner-hours {
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: bold;
+    color: $cl-pink;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 75px;
+    left: 83px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .remark {
+    background-color: $cl-grey-bg;
+  }
+
+  .remark__wrapper {
+    padding: 45px 0;
+    padding-bottom: 70px;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: $cl-grey-bg;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
+  }
+
+  .remark__timer {
+    background-size: 300px 345px;
+    min-height: 345px;
+    width: 39%;
+    margin: -25px 0 0 0;
+    padding: 0;
+    background-position: 10px top;
+
+    &::before {
+      width: 255px;
+      height: 255px;
+      top: 69px;
+      left: 32px;
+    }
+
+    &::after {
+      width: 221px;
+      height: 221px;
+      top: 87px;
+      left: 49px;
+    }
+
+    .remark__banner-hours {
+      font-size: 120px;
+      line-height: 187px;
+      top: 95px;
+      left: 90px;
+    }
+  }
+
+  .remark__description {
+    width: 61%;
+    margin-top: 70px;
+  }
+
+  .remark__lead {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .remark__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0;
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
+
+    span {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .remark__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

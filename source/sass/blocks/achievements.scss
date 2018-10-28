@@ -1,0 +1,17 @@
+.achievements {
+  background-color: $cl-grey-bg;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements__checkbox-indicator {
+  margin-right: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .achievements {
+    background-color: $cl-white;
+    padding: 0 10px;
+  }
+}

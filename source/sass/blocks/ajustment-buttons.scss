@@ -186,6 +186,16 @@
   margin-top: 58px;
 }
 
+.ajustment-buttons__submit::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 20px;
+  right: 60px;
+  width: 317px;
+  border: 1px solid #e5e5e5;
+}
+
 .ajustment-buttons__form-controls {
   margin: 11px 0 6px 0;
   border: 0;
@@ -198,6 +208,9 @@
   height: 55px;
   font-weight: bold;
   letter-spacing: 1px;
+  position: relative;
+  right: 40px;
+  width: 280px;
 }
 
 .ajustment-buttons__form-controls--submit {
@@ -248,7 +261,7 @@
     height: 22px;
     border-bottom: 1px solid $cl-grey-border;
     padding-bottom: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 
   .ajustment-buttons__button--range {
@@ -258,8 +271,13 @@
   }
 
   .ajustment-buttons__submit {
+    width: 300px;
     padding: 0 10px;
     margin-top: 0;
+  }
+
+  .ajustment-buttons__submit::before {
+    display: none;
   }
 
   .ajustment-buttons__icon {
@@ -267,7 +285,7 @@
   }
 
   .ajustment-buttons__button {
-    width: 100%;
+    width: 210px;
     padding: 0;
 
     &--checked {
@@ -336,6 +354,7 @@
   }
 
   .ajustment-buttons__button {
+    width: 330px;
     padding: 0;
 
     &--crop {

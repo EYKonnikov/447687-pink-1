@@ -1,7 +1,14 @@
 {
-  "name": "pink",
-  "version": "15.0.0",
-  "private": true,
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "dependencies": {
+    "node-normalize-scss": "^8.0.0",
+    "npx": "^10.2.0",
+    "picturefill": "^3.0.3"
+  },
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -27,18 +34,6 @@
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "gulp start"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -50,9 +45,13 @@
   "engines": {
     "node": "8.12"
   },
-  "dependencies": {
-    "node-normalize-scss": "^8.0.0",
-    "npx": "^10.2.0",
-    "picturefill": "^3.0.3"
-  }
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "editorconfig": "editorconfig-cli",
+    "start": "gulp start",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "version": "15.0.0"
 }
